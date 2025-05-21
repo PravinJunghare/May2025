@@ -1,5 +1,5 @@
-package com.qa.opencart.pages;
 
+package com.qa.opencart.pages;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +30,6 @@ public class AccountsPage {
 		eleUtil = new ElementUtil(driver);
 
 	}
-
 
 	// 4 Page actions
 	public String getAccPageTitle() {

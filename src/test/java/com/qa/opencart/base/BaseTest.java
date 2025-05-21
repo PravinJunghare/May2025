@@ -2,6 +2,8 @@ package com.qa.opencart.base;
 
 import java.util.Properties;
 
+import javax.naming.directory.SearchResult;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -9,7 +11,10 @@ import org.testng.annotations.BeforeTest;
 import com.qa.opencart.factory.Driverfactory;
 import com.qa.opencart.pages.AccountsPage;
 import com.qa.opencart.pages.LoginPage;
+import com.qa.opencart.pages.ProductInfoPage;
 import com.qa.opencart.pages.SearchPage;
+
+
 
 public class BaseTest {
 
@@ -22,6 +27,8 @@ public class BaseTest {
 	protected LoginPage loginPage;
 	protected AccountsPage  accountsPage;
 	protected SearchPage searchPage;
+	protected ProductInfoPage productInfoPage;
+	
 
 	@BeforeTest
 	public void setUp() {
