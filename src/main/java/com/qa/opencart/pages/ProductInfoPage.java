@@ -30,7 +30,7 @@ public class ProductInfoPage {
 
 	public String getProductHeaderValue() {
 		String productHeaderValue = eleUtil.doElementGetText(productHeader);
-		System.out.println("Product Header :" + productHeaderValue);
+		System.out.println("Product Header Value :" + productHeaderValue);
 		return productHeaderValue;
 	}
 	
