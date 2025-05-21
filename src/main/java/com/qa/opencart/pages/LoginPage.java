@@ -43,13 +43,13 @@ public class LoginPage {
 
 	}
 
-	public String doLogin(String un, String pwd) {
+	public AccountsPage  doLogin(String un, String pwd) {
 		driver.findElement(username).sendKeys(un);
 		driver.findElement(password).sendKeys(pwd);
 		driver.findElement(loginBtn).click();
 		String accPageTitle= driver.getTitle();
 		System.out.println("Acc Page title ...." +accPageTitle);
-		return accPageTitle;
+		return new AccountsPage(driver);
 
 	}
 
