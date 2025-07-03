@@ -6,13 +6,14 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-import com.qa.opencart.factory.Driverfactory;
+import com.qa.opencart.factory.DriverFactory;
+
 import com.qa.opencart.pages.AccountsPage;
 import com.qa.opencart.pages.LoginPage;
 
 public class BaseTest {
 
-	Driverfactory df;
+	DriverFactory df;
 	WebDriver driver;
 	protected Properties prop;
 	
@@ -23,7 +24,7 @@ public class BaseTest {
 
 	@BeforeTest
 	public void setUp() {
-		df = new Driverfactory();// created driver factory object
+		df = new DriverFactory();// created driver factory object
 		prop=df.initProp();
 		//driver = df.initDriver("chrome");// to call initDriver method to get driver
 		driver=df.initDriver(prop);
