@@ -13,7 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.qa.opencart.exceptions.BrowserException;
 
-public class Driverfactory {
+public class DriverFactory {
 
 	public WebDriver driver;
 	Properties prop;
